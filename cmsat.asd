@@ -3,7 +3,7 @@
 ;;;; +----------------------------------------------------------------+
 
 (asdf:defsystem #:cmsat
-  :description "Lisp bindings for cryptominisat5."
+  :description "Cryptominisat5 bindings for Common Lisp."
   :author "death <github.com/death>"
   :license "MIT"
   :defsystem-depends-on (#:cffi-grovel)
