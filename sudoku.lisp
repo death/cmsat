@@ -75,9 +75,9 @@ clause is true."
 (defun rule-3 ()
   "None of the 3x3 boxes contain duplicate numbers."
   (do ((r 0 (+ r 3)))
-      ((= r 9))
+      ((= r *sudoku-rows*))
     (do ((c 0 (+ c 3)))
-        ((= c 9))
+        ((= c *sudoku-cols*))
       (dotimes (val *sudoku-vals*)
         (dotimes (rr 3)
           (dotimes (cc 3)

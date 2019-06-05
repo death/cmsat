@@ -136,10 +136,10 @@ returned.
 
 If the problem is undefined, NIL and NIL are the two values returned."
   (let ((solver (cmsat-new)))
-    (when num-threads
-      (cmsat-set-num-threads solver num-threads))
     (unwind-protect
          (progn
+           (when num-threads
+             (cmsat-set-num-threads solver num-threads))
            (add-clauses clauses solver)
            (let ((lbool (cmsat-solve solver)))
              (case (getf lbool 'x)
