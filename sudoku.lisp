@@ -17,7 +17,7 @@
   "The number of columns in the Sudoku board.")
 
 (defvar *sudoku-vals* 9
-  "The number of possible values in the Sudoku board.")
+  "The number of possible values in a Sudoku cell.")
 
 (defun to-var (row col val)
   "Return a variable designation for the supplied coordinates and
